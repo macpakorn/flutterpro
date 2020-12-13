@@ -4,6 +4,9 @@
 
 import 'package:flutter/material.dart';
 
+import 'favoriteA.dart';
+import 'favoriteB.dart';
+import 'favoriteC.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -38,11 +41,9 @@ class MyApp extends StatelessWidget {
             ),
           ),
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          Text('41'),
+          FavoriteA(),
+          ParentManageB(),
+          ParentManageC()
         ],
       ),
     );
